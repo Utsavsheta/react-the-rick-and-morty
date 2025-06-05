@@ -1,0 +1,39 @@
+/* src/pages/CharactersPage.module.css */
+
+.pageHeader {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 3rem 0 3rem;
+  color: #1a1a1a;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+/* background-image: url('/public/bg-rick-morty.svg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain; */
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-items: center;
+  background-color: rgb(39 43 51);
+}
+
+@media (max-width: 1296px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

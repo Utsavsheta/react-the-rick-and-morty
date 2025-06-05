@@ -1,0 +1,61 @@
+/* card css for large screen (868px up screen size)*/
+.card {
+  width: 600px;
+  height: 260px;
+  display: flex;
+  overflow: hidden;
+  background: rgb(60 62 68);
+  border-radius: 0.5rem;
+  margin: 0.75rem;
+  color: white;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* add space between image and  character data */
+.cardContent{
+  padding: 16px;
+}
+
+/* image with border  */
+.image {
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* css for mobile view (up to 868px screen size) */
+@media (max-width: 868px) {
+  .card {
+    flex-direction: column;
+    height: initial;
+    width: 300px;
+    gap: 2px
+  }
+}
+
+/* status dot  */
+.statusDot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Green dot for alive status */
+.statusAlive {
+  background-color: #4caf50; /* green */
+}
+
+/* Red dot for dead status */
+.statusDead {
+  background-color: #f44336; /* red */
+}
+
+/* Gray dot for unknown or other statuses */
+.statusUnknown {
+  background-color: #9e9e9e; /* gray */
+}
